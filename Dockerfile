@@ -43,5 +43,5 @@ USER nodejs
 
 HEALTHCHECK --interval=1m CMD wget -qO- "http://localhost:${PORT:-3000}/_health" | grep -q "OK" || exit 1
 
-EXPOSE 8080
+EXPOSE 3000
 CMD ["yarn", "start"]
